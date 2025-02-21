@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Word Scramble Challenge</h1>
+        
+        <div class="selection">
+            <label for="genre">Choose a Genre:</label>
+            <select id="genre">
+                <option value="general">General</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="technology">Technology</option>
+                <option value="literature">Literature</option>
+            </select>
+            
+            <label for="category">Choose a Category:</label>
+            <select id="category">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            
+            <button id="startGame">Start Game</button>
+        </div>
+        
+        <div class="game-content" style="display: none;">
+            <p class="scrambled-word" id="scrambledWord">Loading...</p>
+            <input type="text" id="userInput" placeholder="Your guess...">
+            <button id="submitGuess">Submit</button>
+            <button id="hintButton">Hint</button>
+            <p id="hint" class="hint-text">Hint will appear here</p>
+            <p class="timer">Time Left: <span id="timer">30</span>s</p>
+            <p class="score">Score: <span id="score">0</span></p>
+        </div>
+    </div>
+</body>
+</html>
